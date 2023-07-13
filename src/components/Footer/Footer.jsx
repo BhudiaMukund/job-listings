@@ -17,7 +17,7 @@ const Footer = ({ autoClose }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       showFooter();
-    }, 3000);
+    }, 4000);
 
     return () => {
       clearTimeout(timeout);
