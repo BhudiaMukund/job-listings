@@ -1,0 +1,83 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 36px;
+  margin: 0 164px;
+
+  background: transparent;
+  transform: translateY(-50%);
+  background: white;
+  box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 10%);
+  .filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+    .filter {
+      display: flex;
+      flex-direction: row;
+      span.filter-description {
+        background: var(--FilterTablets);
+        padding: 8px 12px;
+        font-weight: 700;
+        color: var(--Cyan);
+      }
+      button {
+        outline: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        background: var(--Cyan);
+        &:hover {
+          cursor: pointer;
+          background: var(--DarkGrayishCyan);
+          transition: all 150ms ease-in-out;
+        }
+      }
+    }
+  }
+  button.clear {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: inherit;
+    color: var(--Cyan);
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: -3px;
+      height: 2px;
+      background: var(--Cyan);
+      transition: transform 300ms ease-in-out;
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    &:hover {
+      cursor: pointer;
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    margin: 0 100px;
+  }
+  @media only screen and (max-width: 800px) {
+    margin: 0 75px;
+  }
+  @media only screen and (max-width: 600px) {
+    margin: 0 48px;
+  }
+  @media only screen and (max-width: 450px) {
+    margin: 0 24px;
+  }
+}

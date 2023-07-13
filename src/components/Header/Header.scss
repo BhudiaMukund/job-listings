@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+  background: var(--Cyan);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .desktop-illustration {
+    display: block;
+  }
+  .mobile-illustration {
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .desktop-illustration {
+      display: none;
+    }
+    .mobile-illustration {
+      display: block;
+    }
+  }
+}

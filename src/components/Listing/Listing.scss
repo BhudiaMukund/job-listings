@@ -1,0 +1,135 @@
+article {
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 30px 42px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 2px 8px 10px 0px rgb(0 0 0 / 10%);
+  .listing-details-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      span.company {
+        font-weight: 700;
+        color: var(--Cyan);
+        font-size: 16px;
+        margin-right: 4px;
+        font-size: 18px;
+      }
+      span.new {
+        color: white;
+        background: var(--Cyan);
+        padding: 6px 8px;
+        text-transform: uppercase;
+        border-radius: 20px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 700;
+      }
+      span.featured {
+        padding: 6px 8px;
+        color: white;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        background: var(--DarkGrayishCyan);
+      }
+    }
+    h1 {
+      color: var(--DarkGrayishCyan);
+      font-size: 24px;
+    }
+    .listing-details {
+      color: var(--GrayishCyan);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      span.divider {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--GrayishCyan);
+      }
+    }
+  }
+  .filter-tablets-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    button {
+      outline: none;
+      border: none;
+      font-family: inherit;
+      font-weight: 700;
+      color: var(--Cyan);
+      background: var(--FilterTablets);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 18px;
+      &:focus {
+        outline: rgb(104, 190, 205) dotted 3px;
+      }
+      &:hover {
+        cursor: pointer;
+        transition: color 150ms ease-in-out, 150ms ease-in-out;
+        background: var(--Cyan);
+        color: white;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    .image-container {
+      position: absolute;
+      width: max-content;
+      height: max-content;
+      transform: translateY(-75%);
+      img {
+        height: 68px;
+        width: 68px;
+      }
+    }
+    .listing-details-container {
+      margin-top: 25px;
+      .listing-details {
+        font-size: 18px;
+      }
+    }
+    .filter-tablets-container {
+      width: 100%;
+      border-top: 1px solid var(--GrayishCyan);
+      padding: 20px 0 0 0;
+      gap: 12px 8px;
+    }
+  }
+}
+
+article.featured {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: var(--Cyan);
+    border-radius: 10px 0 0 10px;
+  }
+}
