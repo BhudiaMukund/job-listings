@@ -49,7 +49,7 @@ function App() {
         setFilter={setFilter}
         filter={filter}
       />
-{/*       <Footer autoClose={8000} /> */}
+      <Footer autoClose={8000} />
     </div>
   );
 }
