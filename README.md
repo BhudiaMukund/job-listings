@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [[Add solution URL here](https://github.com/BhudiaMukund/job-listings)]([https://your-solution-url.com](https://github.com/BhudiaMukund/job-listings))
-- Live Site URL: [[Add live site URL here](https://static-job-listings-solution.netlify.app/)]([https://your-live-site-url.com](https://static-job-listings-solution.netlify.app/))
+- Solution URL: [https://github.com/BhudiaMukund/job-listings](https://github.com/BhudiaMukund/job-listings)
+- Live Site URL: [https://static-job-listings-solution.netlify.app/](https://static-job-listings-solution.netlify.app/)
 
 ## My process
 
